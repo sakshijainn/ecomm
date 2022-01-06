@@ -8,12 +8,11 @@ import Header from "./components/Header";
 
 export default function App() {
   return (
-    <div className="bg-indigo-600 w-full h-screen">
-      <Header />
-     
-        <Router>
+    <div className=" w-full h-screen">
+   <Router>
+   <Header />
            <Switch>
-           <Route path ="/" exact  component ={ProductListing}/>
+          <Route path ="/" exact  component ={ProductListing}/>
           <Route path="/login" component={Auth} />
           <Route path="/cart" component={Cart} />
           <Route path="/wishlist" component={WishList} /> 
