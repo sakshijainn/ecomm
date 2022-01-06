@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link , BrowserRouter } from 'react-router-dom';
 const Header = () => {
     const  user ="Guest"
     const [open,setOpen] =useState(false)
@@ -22,9 +22,12 @@ const Header = () => {
                 
                 
                 <li className="md:ml=8 text-2xl px-2  space-x-8 ... md:my-0 my-7">
-                   <Link to ="/">
+                    <BrowserRouter>
+                    <Link to ="/">
                    <a className="text-gray-800 hover:text-gray-400 duration-500"><ion-icon name="home-outline"></ion-icon></a>
                    </Link>
+                   </BrowserRouter>
+                   
                     
                
                     <a className="text-gray-800 hover:text-gray-400 duration-500"><ion-icon name="heart-outline"></ion-icon></a>

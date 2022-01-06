@@ -13,10 +13,11 @@ export default function App() {
      
         <Router>
            <Switch>
+           <Route path ="/" exact  component ={ProductListing}/>
           <Route path="/login" component={Auth} />
           <Route path="/cart" component={Cart} />
           <Route path="/wishlist" component={WishList} /> 
-          <Route path ="/" exact  component ={ProductListing}/>
+         
           </Switch>
           
         </Router>
