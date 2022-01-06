@@ -8,7 +8,8 @@ import Header from "./components/Header";
 
 export default function App() {
   return (
-    <div className=" w-full h-screen">
+    <>
+   
    <Router>
    <Header />
            <Switch>
@@ -20,6 +21,7 @@ export default function App() {
           </Switch>
           
         </Router>
-    </div>
+    
+    </>
   )
 }
