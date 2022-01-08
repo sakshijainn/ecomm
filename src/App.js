@@ -8,20 +8,22 @@ import Header from "./components/Header";
 
 export default function App() {
   return (
-    <>
-   
-   <Router>
-   <Header />
-           <Switch>
-          <Route path ="/" exact  component ={ProductListing}/>
+  
+      <Router>
+          <div className="w-full h-screen">
+        <Header />
+       
+    
+        <Switch>
+          <Route path="/" exact component={ProductListing} />
           <Route path="/login" component={Auth} />
           <Route path="/cart" component={Cart} />
-          <Route path="/wishlist" component={WishList} /> 
-         
-          </Switch>
-          
-        </Router>
-    
-    </>
-  )
+          <Route path="/wishlist" component={WishList} />
+        </Switch>
+        </div>
+      </Router>
+      
+      
+   
+  );
 }

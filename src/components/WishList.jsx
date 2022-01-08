@@ -3,9 +3,11 @@ import React from 'react'
 const WishList = () => {
     console.log("wishlist")
     return (
-        <div>
-            <h3>Hello Wishlist</h3>
+        <div className="flex h-screen">
+        <div className="m-auto">
+          <h1>Hello wishlist</h1>
         </div>
+      </div>
     )
 }
 
