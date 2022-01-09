@@ -18,7 +18,7 @@ const ProductListing = () => {
   console.log("product");
   return (
     
-    <div className="mt-6 ">mt-6
+    <div  className="mt-6 bg-yellow-600 ">mt-6
      <h1 className="text-black-600">Product Listing</h1>   
       </div>
    
